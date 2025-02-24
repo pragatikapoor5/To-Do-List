@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Viaoda+Libre&display=swap" rel="stylesheet">
+</head>
+<style>
+    body{
+        background: url("Images/image.jpg") no-repeat center/cover fixed;
+    }
+    .todolist{
+        font-family: "Viaoda Libre", serif;
+        font-weight: 600;
+        font-style: normal;
+    }
+    .addbtn{
+        background-color: rgba(3, 3, 194, 0.863);
+        color: white;
+        border: 2px solid rgba(3, 3, 194, 0.863);
+        border-radius: 5px;
+        padding: 5px 10px;
+        margin: 3px;
+    }
+    .addbtn:hover{
+        background-color: rgba(13, 13, 139, 0.997);
+        border: 2px solid rgba(13, 13, 139, 0.997);
+        color: white;
+    }
+    input{
+        padding: 2px;
+    }
+    .maincol{
+        background-color: rgba(0, 0, 0, 0.782);
+    }
+
+</style>
+<body>
+    <div class="container-fluid">
+        <div class="row my-5">
+            <div class="col-sm-7 maincol mx-auto rounded text-center">
+                <h1 style="color: white" class="todolist">To-Do List</h1>
+                <input id="taskinput" placeholder="Add a new to-do">
+                <button class="addbtn" onclick="addtask()">Add</button>
+                <ul id="task"></ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
